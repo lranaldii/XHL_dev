@@ -1,0 +1,29 @@
+{
+  "username": "Alice",
+  "date": "2025-06-12",
+  "weekday": "Thursday",
+  "time": "02:00 PM",
+  "task": "Vergleichen Sie die bereitgestellten Datensätze aus zwei verschiedenen Ländern, die dasselbe Thema beschreiben. Erstellen Sie einen schriftlichen Bericht, der die in den Daten widergespiegelten kulturellen, geschlechtsspezifischen, sozialen oder wirtschaftlichen Unterschiede hervorhebt. Interpretieren Sie die Ergebnisse kontextualisiert unter Berücksichtigung demografischer Faktoren und lokaler Gesellschaftsstrukturen. Identifizieren Sie relevante Trends oder Muster und diskutieren Sie mögliche statistische Verzerrungen oder Verzerrungen, die durch lokale Faktoren verursacht werden. Speichern Sie den Abschlussbericht unter „./report/cross_cultural_analysis.txt“.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/cross_cultural_analysis.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/cross_cultural_analysis.txt",
+        "keywords": [
+          "gender",
+          "culture",
+          "bias",
+          "context",
+          "difference"
+        ]
+      }
+    }
+  ]
+}

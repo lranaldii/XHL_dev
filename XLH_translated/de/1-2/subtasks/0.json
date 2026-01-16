@@ -1,0 +1,45 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "10:00 AM",
+  "task": "Erstellen Sie anhand der bereitgestellten persönlichen Informationen, der Stellenbeschreibung und der Personalvermittlerliste einen länderspezifischen Lebenslauf für jeden Personalvermittler und passen Sie dabei Sprache, Ton, Struktur und Formatierung an die Gepflogenheiten des jeweiligen Landes an. Speichern Sie jeden Lebenslauf als Word-Dokument im Ordner „./cv/“. Senden Sie dann an jeden Personalvermittler eine separate E-Mail mit dem entsprechenden Lebenslauf und speichern Sie jede gesendete E-Mail als Textdatei im Ordner „./email/“.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_DE.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_US.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_IT.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_US.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_IT.txt"
+      }
+    }
+  ]
+}

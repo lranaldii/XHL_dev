@@ -1,0 +1,46 @@
+{
+  "username": "Alice",
+  "date": "2025-05-15",
+  "weekday": "Thursday",
+  "time": "01:00 PM",
+  "task": "Utilizzando le informazioni sul ristorante fornite, i menu, le recensioni e le preferenze dell'utente, seleziona il ristorante più adatto che soddisfa le esigenze dietetiche dell'utente. Considera gli ingredienti del menu, le recensioni e le politiche del ristorante. Scrivi un'e-mail per richiedere una prenotazione che indichi chiaramente le esigenze dietetiche e i dettagli della prenotazione e salvala come \"./emails/restaurant_booking_request.txt\". Crea anche una voce di calendario per la prenotazione e salvala come \"./calendar/restaurant_booking.ics\".",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/restaurant_booking_request.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/restaurant_booking.ics"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./emails/restaurant_booking_request.txt",
+        "keywords": [
+          "gluten",
+          "reservation",
+          "Oslo",
+          "dietary"
+        ]
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/restaurant_booking.ics",
+        "keywords": [
+          "DTSTART",
+          "Oslo",
+          "Dinner"
+        ]
+      }
+    }
+  ]
+}

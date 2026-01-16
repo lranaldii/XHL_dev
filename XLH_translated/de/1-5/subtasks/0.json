@@ -1,0 +1,15 @@
+{
+  "username": "Alice",
+  "date": "2025-05-02",
+  "weekday": "Friday",
+  "time": "04:00 PM",
+  "task": "Erstellen Sie anhand der bereitgestellten Rezept- und Länderinformationen eine lokalisierte Einkaufsliste für die Zubereitung des Gerichts im Zielland. Passen Sie die Namen der Zutaten an die Landessprache an, wandeln Sie Mengen und Einheiten in die vor Ort gebräuchlichen um und schlagen Sie kulturell angemessene Ersatzstoffe vor, wenn Originalzutaten nicht leicht erhältlich sind. Speichern Sie die endgültige Einkaufsliste in „./shopping/shopping_list.txt“.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./shopping/shopping_list.txt"
+      }
+    }
+  ]
+}

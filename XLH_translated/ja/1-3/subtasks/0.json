@@ -1,0 +1,29 @@
+{
+  "username": "Alice",
+  "date": "2025-06-12",
+  "weekday": "Thursday",
+  "time": "02:00 PM",
+  "task": "同じトピックを説明する 2 つの異なる国から提供されたデータセットを比較します。データに反映されている文化、性別、社会、経済の違いを強調した書面によるレポートを作成します。人口動態要因と地域の社会構造を考慮して、状況に応じた方法で結果を解釈します。関連する傾向やパターンを特定し、局所的な要因によって引き起こされる潜在的な統計的な偏りや歪みについて話し合います。最終レポートを「./report/cross_culture_analysis.txt」に保存します。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/cross_cultural_analysis.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/cross_cultural_analysis.txt",
+        "keywords": [
+          "gender",
+          "culture",
+          "bias",
+          "context",
+          "difference"
+        ]
+      }
+    }
+  ]
+}

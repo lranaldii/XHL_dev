@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "09:30 AM",
+  "task": "Utilizzando la posizione fornita, le regole di raccolta dei rifiuti e le festività locali, crea un calendario di raccolta dei rifiuti localizzato. Il calendario dovrebbe includere diversi tipi di rifiuti, la loro frequenza di raccolta e tenere conto delle festività locali in cui i servizi potrebbero essere sospesi. Formattare le date secondo le convenzioni locali e utilizzare la lingua locale. Salva il calendario come './calendar/waste_collection_calendar.ics'. Inoltre, genera una breve email esplicativa che riassume il programma e salvala come './emails/waste_calendar_email.txt'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/waste_collection_calendar.ics"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/waste_calendar_email.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/waste_collection_calendar.ics",
+        "keywords": [
+          "Organic",
+          "Paper",
+          "Plastic",
+          "Glass",
+          "General"
+        ]
+      }
+    }
+  ]
+}

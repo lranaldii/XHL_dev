@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-04-10",
+  "weekday": "Thursday",
+  "time": "11:00 AM",
+  "task": "Analizza il set di dati sulle vendite fornito e crea un report leggibile per un pubblico locale nel paese specificato. Il rapporto deve rispettare le convenzioni del paese, inclusi valuta, separatori decimali e delle migliaia, formato della data e lingua. Calcola le entrate totali per prodotto e le entrate complessive, presenta i risultati in una tabella formattata correttamente e genera almeno un grafico con una legenda chiara. Salva il rapporto scritto in './report/sales_report.txt' e il grafico in './report/sales_chart.png'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_report.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_chart.png"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/sales_report.txt",
+        "keywords": [
+          "€",
+          "Totale",
+          "/",
+          ","
+        ]
+      }
+    }
+  ]
+}

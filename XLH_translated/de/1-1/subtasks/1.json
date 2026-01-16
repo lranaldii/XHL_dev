@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-04-10",
+  "weekday": "Thursday",
+  "time": "11:00 AM",
+  "task": "Analysieren Sie den bereitgestellten Verkaufsdatensatz und erstellen Sie einen lesbaren Bericht für eine lokale Zielgruppe im angegebenen Land. Der Bericht muss den Konventionen des Landes entsprechen, einschließlich Währung, Dezimal- und Tausendertrennzeichen, Datumsformat und Sprache. Berechnen Sie den Gesamtumsatz pro Produkt und den Gesamtumsatz, stellen Sie die Ergebnisse in einer ordnungsgemäß formatierten Tabelle dar und erstellen Sie mindestens ein Diagramm mit einer klaren Legende. Speichern Sie den schriftlichen Bericht in „./report/sales_report.txt“ und das Diagramm in „./report/sales_chart.png“.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_report.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_chart.png"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/sales_report.txt",
+        "keywords": [
+          "€",
+          "Totale",
+          "/",
+          ","
+        ]
+      }
+    }
+  ]
+}

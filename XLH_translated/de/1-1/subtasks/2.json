@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "09:30 AM",
+  "task": "Erstellen Sie anhand des angegebenen Standorts, der Müllabfuhrregeln und der örtlichen Feiertage einen lokalen Müllabfuhrkalender. Der Kalender sollte verschiedene Abfallarten und deren Abholhäufigkeit enthalten und örtliche Feiertage berücksichtigen, an denen die Dienste möglicherweise eingestellt werden. Formatieren Sie Datumsangaben entsprechend den örtlichen Gepflogenheiten und verwenden Sie die Landessprache. Speichern Sie den Kalender unter „./calendar/waste_collection_calendar.ics“. Erstellen Sie außerdem eine kurze erläuternde E-Mail mit einer Zusammenfassung des Zeitplans und speichern Sie diese unter „./emails/waste_calendar_email.txt“.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/waste_collection_calendar.ics"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/waste_calendar_email.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/waste_collection_calendar.ics",
+        "keywords": [
+          "Organic",
+          "Paper",
+          "Plastic",
+          "Glass",
+          "General"
+        ]
+      }
+    }
+  ]
+}

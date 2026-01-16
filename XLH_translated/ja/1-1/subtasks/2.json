@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "09:30 AM",
+  "task": "指定された場所、廃棄物収集ルール、および地域の休日を使用して、地域別の廃棄物収集カレンダーを作成します。カレンダーには、さまざまな廃棄物の種類、収集頻度、サービスが停止される可能性がある地域の休日を考慮する必要があります。現地の慣例に従って日付をフォーマットし、現地の言語を使用します。カレンダーを「./calendar/waste_collection_calendar.ics」として保存します。さらに、スケジュールを要約した短い説明メールを生成し、「./emails/waste_calendar_email.txt」として保存します。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/waste_collection_calendar.ics"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/waste_calendar_email.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/waste_collection_calendar.ics",
+        "keywords": [
+          "Organic",
+          "Paper",
+          "Plastic",
+          "Glass",
+          "General"
+        ]
+      }
+    }
+  ]
+}

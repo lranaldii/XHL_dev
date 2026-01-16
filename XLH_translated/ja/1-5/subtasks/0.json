@@ -1,0 +1,15 @@
+{
+  "username": "Alice",
+  "date": "2025-05-02",
+  "weekday": "Friday",
+  "time": "04:00 PM",
+  "task": "提供されたレシピと国の情報を使用して、対象国で料理を準備するためのローカライズされた買い物リストを作成します。原材料名を現地の言語に合わせ、数量と単位を現地で一般的に使用されているものに変換し、元の原材料が簡単に入手できない場合には文化的に適切な代替品を提案します。最終的な買い物リストを「./shopping/shopping_list.txt」に保存します。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./shopping/shopping_list.txt"
+      }
+    }
+  ]
+}

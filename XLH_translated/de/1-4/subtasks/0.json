@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-07-05",
+  "weekday": "Saturday",
+  "time": "03:00 PM",
+  "task": "Generieren Sie Webdesign-/UI-Artikel, die für jedes in der Datei „country.csv“ aufgeführte Land und jede Sprache angepasst sind. Befolgen Sie die angegebenen Konventionen für Ton, Länge, Struktur, visuellen Stil und Terminologie. Beziehen Sie nach Möglichkeit lokale Beispiele oder Referenzen ein und passen Sie Farben und Symbole an kulturelle Normen an. Speichern Sie jeden Artikel als „./articles/web_design_article_<ID>.txt“, wobei <ID> der Ländercode ist.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_CN.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./articles/web_design_article_DE.txt",
+        "keywords": [
+          "Web Design",
+          "UI",
+          "H1",
+          "H2",
+          "CTA"
+        ]
+      }
+    }
+  ]
+}

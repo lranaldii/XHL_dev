@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-05-10",
+  "weekday": "Saturday",
+  "time": "10:00 AM",
+  "task": "Utilizzando l'elenco dei clienti fornito e le informazioni sulle scadenze fiscali, identifica le prossime scadenze fiscali per ciascun cliente in base al Paese e al tipo di ID fiscale. Genera email di promemoria da inviare 30, 14 e 3 giorni prima di ogni scadenza. Ogni e-mail deve indicare chiaramente il nome della scadenza, la data di scadenza e il paese applicabile. Salva ogni email di promemoria come file di testo separato nella directory \"./emails/\".",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/reminder_1_30d.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/reminder_2_14d.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./emails/reminder_1_30d.txt",
+        "keywords": [
+          "Partita IVA",
+          "Italy",
+          "June",
+          "deadline"
+        ]
+      }
+    }
+  ]
+}

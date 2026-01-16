@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-07-05",
+  "weekday": "Saturday",
+  "time": "03:00 PM",
+  "task": "Genera un articolo di web design/interfaccia utente adattato per ogni paese e lingua elencati in paesi.csv. Seguire le convenzioni di tono, lunghezza, struttura, stile visivo e terminologia specificate. Includi esempi o riferimenti locali quando possibile e adatta colori e simboli in base alle norme culturali. Salva ogni articolo come './articles/web_design_article_<ID>.txt', dove <ID> è il codice del paese.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_CN.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./articles/web_design_article_DE.txt",
+        "keywords": [
+          "Web Design",
+          "UI",
+          "H1",
+          "H2",
+          "CTA"
+        ]
+      }
+    }
+  ]
+}

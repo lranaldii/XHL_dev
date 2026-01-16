@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-04-10",
+  "weekday": "Thursday",
+  "time": "11:00 AM",
+  "task": "提供された販売データセットを分析し、指定された国のローカル視聴者向けに読みやすいレポートを作成します。レポートは、通貨、小数点と千の位の区切り記号、日付形式、言語などの国の規則に従う必要があります。製品ごとの総収益と全体の収益を計算し、結果を適切にフォーマットされた表に表示し、明確な凡例を含む少なくとも 1 つのグラフを生成します。作成したレポートを「./report/sales_report.txt」に保存し、グラフを「./report/sales_chart.png」に保存します。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_report.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_chart.png"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/sales_report.txt",
+        "keywords": [
+          "€",
+          "Totale",
+          "/",
+          ","
+        ]
+      }
+    }
+  ]
+}
