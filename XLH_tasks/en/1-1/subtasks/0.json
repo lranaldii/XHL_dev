@@ -1,0 +1,20 @@
+{
+  "username": "Alice",
+  "date": "2025-12-27",
+  "weekday": "Saturday",
+  "time": "09:00 AM",
+  "task": "Create a weekend itinerary for Alice in Oslo, using only public transport. The itinerary should include transport modes (bus, tram, metro, ferry), departure, arrival times and destinations (and what to do once there), line numbers, ticket information. Generate a weekend_itinerary.csv summary of the itinerary.",
+  "evaluation": [
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "csv",
+        "file": "./outputs/weekend_itinerary.csv",
+        "keywords": [
+          "departure",
+          "arrival"
+        ]
+      }
+    }  
+  ]
+}

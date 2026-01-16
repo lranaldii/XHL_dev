@@ -1,0 +1,6 @@
+waste_type,collection_day,frequency
+Organic,Monday,Weekly
+Paper,Wednesday,Biweekly
+Plastic,Friday,Weekly
+Glass,Saturday,Monthly
+General,Thursday,Weekly

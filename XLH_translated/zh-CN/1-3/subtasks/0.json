@@ -1,0 +1,29 @@
+{
+  "username": "Alice",
+  "date": "2025-06-12",
+  "weekday": "Thursday",
+  "time": "02:00 PM",
+  "task": "比较两个不同国家提供的描述同一主题的数据集。制作一份书面报告，强调数据中反映的文化、性别、社会或经济差异。考虑人口因素和当地社会结构，以情境方式解释结果。确定相关趋势或模式，并讨论由当地因素引起的任何潜在的统计偏差或扭曲。将最终报告保存在“./report/cross_culture_analysis.txt”中。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/cross_cultural_analysis.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/cross_cultural_analysis.txt",
+        "keywords": [
+          "gender",
+          "culture",
+          "bias",
+          "context",
+          "difference"
+        ]
+      }
+    }
+  ]
+}

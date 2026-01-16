@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "09:30 AM",
+  "task": "使用提供的位置、废物收集规则和当地节​​假日，创建本地化的废物收集日历。日历应包括不同的废物类型、收集频率以及可能暂停服务的当地节假日。根据当地惯例设置日期格式并使用当地语言。将日历另存为“./calendar/waste_collection_calendar.ics”。此外，生成一封简短的解释性电子邮件，总结时间表并将其保存为“./emails/waste_calendar_email.txt”。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/waste_collection_calendar.ics"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/waste_calendar_email.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/waste_collection_calendar.ics",
+        "keywords": [
+          "Organic",
+          "Paper",
+          "Plastic",
+          "Glass",
+          "General"
+        ]
+      }
+    }
+  ]
+}

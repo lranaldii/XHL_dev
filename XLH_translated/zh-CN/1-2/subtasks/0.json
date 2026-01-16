@@ -1,0 +1,45 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "10:00 AM",
+  "task": "使用提供的个人信息、职位描述和招聘人员名单，为每位招聘人员创建一份针对特定国家/地区的简历，并根据每个国家/地区的惯例调整语言、语气、结构和格式。将每份简历另存为 Word 文档，保存在“./cv/”文件夹中。然后向每个招聘人员发送单独的电子邮件，附上相应的简历，并将每封发送的电子邮件作为文本文件保存在“./email/”文件夹中。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_DE.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_US.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_IT.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_US.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_IT.txt"
+      }
+    }
+  ]
+}

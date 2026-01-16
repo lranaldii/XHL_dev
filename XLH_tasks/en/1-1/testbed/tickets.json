@@ -1,0 +1,5 @@
+{
+  "single": {"price": 3.50, "zones": 1},
+  "day_pass": {"price": 10.00, "zones": 1},
+  "weekend_pass": {"price": 15.00, "zones": 1}
+}

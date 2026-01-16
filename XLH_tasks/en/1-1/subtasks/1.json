@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-04-10",
+  "weekday": "Thursday",
+  "time": "11:00 AM",
+  "task": "Analyze the provided sales dataset and create a readable report for a local audience in the specified country. The report must follow the country's conventions, including currency, decimal and thousand separators, date format, and language. Calculate total revenue per product and overall revenue, present the results in a properly formatted table, and generate at least one chart with a clear legend. Save the written report in './report/sales_report.txt'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_report.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_chart.png"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/sales_report.txt",
+        "keywords": [
+          "€",
+          "Totale",
+          "/",
+          ","
+        ]
+      }
+    }
+  ]
+}

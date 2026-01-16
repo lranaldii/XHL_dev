@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-04-10",
+  "weekday": "Thursday",
+  "time": "11:00 AM",
+  "task": "分析提供的销售数据集并为指定国家/地区的本地受众创建可读的报告。报告必须遵循国家/地区的惯例，包括货币、小数点和千位分隔符、日期格式和语言。计算每种产品的总收入和总体收入，以格式正确的表格显示结果，并生成至少一个具有清晰图例的图表。将书面报告保存在“./report/sales_report.txt”中，将图表保存在“./report/sales_chart.png”中。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_report.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_chart.png"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/sales_report.txt",
+        "keywords": [
+          "€",
+          "Totale",
+          "/",
+          ","
+        ]
+      }
+    }
+  ]
+}

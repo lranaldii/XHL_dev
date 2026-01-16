@@ -1,0 +1,5 @@
+line,from,to,transport,frequency_min,first,last
+T1,Jernbanetorget,Majorstuen,Metro,10,05:30,00:30
+12,Majorstuen,Aker Brygge,Tram,15,06:00,23:30
+83,Radhusbrygge 3,Bygdøy,Ferry,30,09:00,18:00
+54,Aker Brygge,Kjelsås,Bus,20,06:30,22:30

@@ -1,0 +1,15 @@
+{
+  "username": "Alice",
+  "date": "2025-05-02",
+  "weekday": "Friday",
+  "time": "04:00 PM",
+  "task": "使用提供的食谱和国家/地区信息，创建用于在目标国家/地区准备菜肴的本地化购物清单。根据当地语言调整成分名称，将数量和单位转换为当地常用的数量和单位，并在不易获得原始成分时建议适合文化的替代品。将最终购物清单保存在“./shopping/shopping_list.txt”中。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./shopping/shopping_list.txt"
+      }
+    }
+  ]
+}
