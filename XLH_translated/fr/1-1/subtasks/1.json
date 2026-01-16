@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-04-10",
+  "weekday": "Thursday",
+  "time": "11:00 AM",
+  "task": "Analysez l'ensemble de données de ventes fourni et créez un rapport lisible pour un public local dans le pays spécifié. Le rapport doit respecter les conventions du pays, notamment la devise, les séparateurs décimaux et de milliers, le format de date et la langue. Calculez le revenu total par produit et le revenu global, présentez les résultats dans un tableau correctement formaté et générez au moins un graphique avec une légende claire. Enregistrez le rapport écrit dans './report/sales_report.txt' et le graphique dans './report/sales_chart.png'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_report.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_chart.png"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/sales_report.txt",
+        "keywords": [
+          "€",
+          "Totale",
+          "/",
+          ","
+        ]
+      }
+    }
+  ]
+}

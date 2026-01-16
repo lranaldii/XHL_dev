@@ -1,0 +1,4 @@
+country,tax_id_type,deadline_name,deadline_date
+Italy,Partita IVA,Quarterly VAT Payment,2025-06-16
+Sweden,F-skatt,Preliminary Tax Payment,2025-06-12
+USA,EIN,Estimated Tax Payment,2025-06-15

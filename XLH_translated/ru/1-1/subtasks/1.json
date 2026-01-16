@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-04-10",
+  "weekday": "Thursday",
+  "time": "11:00 AM",
+  "task": "Проанализируйте предоставленный набор данных о продажах и создайте удобочитаемый отчет для местной аудитории в указанной стране. Отчет должен соответствовать принятым в стране правилам, включая валюту, десятичные и тысячные разделители, формат даты и язык. Рассчитайте общий доход по продукту и общий доход, представьте результаты в правильно отформатированной таблице и создайте хотя бы одну диаграмму с четкой легендой. Сохраните письменный отчет в файле «./report/sales_report.txt», а диаграмму — в файле «./report/sales_chart.png».",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_report.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_chart.png"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/sales_report.txt",
+        "keywords": [
+          "€",
+          "Totale",
+          "/",
+          ","
+        ]
+      }
+    }
+  ]
+}

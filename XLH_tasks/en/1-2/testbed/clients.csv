@@ -1,0 +1,4 @@
+client_id,name,email,country,tax_id_type
+1,Mario Rossi,mario.rossi@email.it,Italy,Partita IVA
+2,Anna Svensson,anna.s@email.se,Sweden,F-skatt
+3,John Smith,john.smith@email.com,USA,EIN

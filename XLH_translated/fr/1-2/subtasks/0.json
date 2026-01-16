@@ -1,0 +1,45 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "10:00 AM",
+  "task": "À l'aide des informations personnelles fournies, de la description de poste et de la liste des recruteurs, créez un CV spécifique à chaque pays pour chaque recruteur, en adaptant le langage, le ton, la structure et le format aux conventions de chaque pays. Enregistrez chaque CV en tant que document Word dans le dossier './cv/'. Envoyez ensuite un email séparé à chaque recruteur, en joignant le CV correspondant, et enregistrez chaque email envoyé sous forme de fichier texte dans le dossier './email/'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_DE.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_US.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_IT.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_US.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_IT.txt"
+      }
+    }
+  ]
+}

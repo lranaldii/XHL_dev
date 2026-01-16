@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-07-05",
+  "weekday": "Saturday",
+  "time": "03:00 PM",
+  "task": "قم بإنشاء مقالات تصميم الويب / واجهة المستخدم المُكيَّفة لكل بلد ولغة مدرجة في ملف ملف ملف sites.csv. اتبع النغمة والطول والبنية والأسلوب المرئي واصطلاحات المصطلحات المحددة. قم بتضمين أمثلة أو مراجع محلية عندما يكون ذلك ممكنًا، وقم بتكييف الألوان والرموز وفقًا للمعايير الثقافية. احفظ كل مقالة باسم './articles/web_design_article_<ID>.txt'، حيث <ID> هو رمز البلد.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_CN.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./articles/web_design_article_DE.txt",
+        "keywords": [
+          "Web Design",
+          "UI",
+          "H1",
+          "H2",
+          "CTA"
+        ]
+      }
+    }
+  ]
+}

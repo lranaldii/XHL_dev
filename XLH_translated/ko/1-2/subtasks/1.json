@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-05-10",
+  "weekday": "Saturday",
+  "time": "10:00 AM",
+  "task": "제공된 고객 목록 및 세금 마감일 정보를 사용하여 국가 및 세금 ID 유형을 기준으로 각 고객의 향후 세금 관련 마감일을 식별합니다. 각 마감일 30일, 14일, 3일 전에 전송될 알림 이메일을 생성하세요. 각 이메일에는 마감일 이름, 마감일, 해당 국가가 명확하게 명시되어 있어야 합니다. 각 알림 이메일을 './emails/' 디렉토리에 별도의 텍스트 파일로 저장합니다.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/reminder_1_30d.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/reminder_2_14d.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./emails/reminder_1_30d.txt",
+        "keywords": [
+          "Partita IVA",
+          "Italy",
+          "June",
+          "deadline"
+        ]
+      }
+    }
+  ]
+}

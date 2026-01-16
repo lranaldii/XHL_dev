@@ -1,0 +1,15 @@
+{
+  "username": "Alice",
+  "date": "2025-05-02",
+  "weekday": "Friday",
+  "time": "04:00 PM",
+  "task": "Usando a receita fornecida e as informações do país, crie uma lista de compras localizada para preparar o prato no país de destino. Adapte os nomes dos ingredientes ao idioma local, converta quantidades e unidades para aquelas comumente usadas localmente e sugira substitutos culturalmente apropriados quando os ingredientes originais não estiverem facilmente disponíveis. Salve a lista de compras final em './shopping/shopping_list.txt'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./shopping/shopping_list.txt"
+      }
+    }
+  ]
+}

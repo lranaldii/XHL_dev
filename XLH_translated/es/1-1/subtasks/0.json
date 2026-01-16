@@ -1,0 +1,41 @@
+{
+  "username": "Alice",
+  "date": "2025-12-27",
+  "weekday": "Saturday",
+  "time": "09:00 AM",
+  "task": "Crea un itinerario de fin de semana para Alice en Oslo, utilizando únicamente el transporte público. El itinerario debe incluir los modos de transporte (autobús, tranvía, metro, ferry), horarios de salida y llegada, números de línea e información sobre los billetes. Genere un archivo de calendario ICS con todos los viajes y guarde un resumen CSV del itinerario.",
+  "evaluation": [
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "csv",
+        "file": "./itinerary/weekend_itinerary.csv",
+        "keywords": [
+          "day",
+          "time",
+          "from",
+          "to",
+          "transport",
+          "line",
+          "duration",
+          "notes"
+        ]
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/Alice.ics",
+        "keywords": [
+          "DTSTART:20251227T101500",
+          "Oslo",
+          "Ferry",
+          "Metro",
+          "Bus",
+          "Tram"
+        ]
+      }
+    }
+  ]
+}

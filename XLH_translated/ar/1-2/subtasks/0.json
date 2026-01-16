@@ -1,0 +1,45 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "10:00 AM",
+  "task": "باستخدام المعلومات الشخصية المقدمة، والوصف الوظيفي، وقائمة مسؤولي التوظيف، قم بإنشاء سيرة ذاتية خاصة بكل بلد لكل مسؤول توظيف، مع تكييف اللغة والأسلوب والبنية والتنسيق مع اتفاقيات كل بلد. احفظ كل سيرة ذاتية كمستند Word في المجلد \"./cv/\". ثم أرسل بريدًا إلكترونيًا منفصلاً إلى كل مسؤول توظيف، مع إرفاق السيرة الذاتية المقابلة، واحفظ كل بريد إلكتروني مرسل كملف نصي في المجلد \"./email/\".",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_DE.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_US.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_IT.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_US.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_IT.txt"
+      }
+    }
+  ]
+}

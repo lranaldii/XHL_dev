@@ -1,0 +1,41 @@
+{
+  "username": "Alice",
+  "date": "2025-12-27",
+  "weekday": "Saturday",
+  "time": "09:00 AM",
+  "task": "Создайте маршрут выходного дня для Алисы в Осло, используя только общественный транспорт. Маршрут должен включать виды транспорта (автобус, трамвай, метро, ​​паром), время отправления и прибытия, номера линий и информацию о билетах. Создайте файл календаря ICS со всеми поездками и сохраните сводку маршрута в формате CSV.",
+  "evaluation": [
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "csv",
+        "file": "./itinerary/weekend_itinerary.csv",
+        "keywords": [
+          "day",
+          "time",
+          "from",
+          "to",
+          "transport",
+          "line",
+          "duration",
+          "notes"
+        ]
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/Alice.ics",
+        "keywords": [
+          "DTSTART:20251227T101500",
+          "Oslo",
+          "Ferry",
+          "Metro",
+          "Bus",
+          "Tram"
+        ]
+      }
+    }
+  ]
+}

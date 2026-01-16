@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "09:30 AM",
+  "task": "제공된 위치, 폐기물 수거 규칙, 현지 공휴일을 활용하여 현지 폐기물 수거 달력을 만듭니다. 달력에는 다양한 폐기물 유형, 수거 빈도, 서비스가 중단될 수 있는 지역 공휴일 등이 포함되어야 합니다. 현지 관례에 따라 날짜 형식을 지정하고 현지 언어를 사용합니다. 달력을 './calendar/waste_collection_calendar.ics'로 저장합니다. 추가적으로, 일정을 요약한 간단한 설명 이메일을 생성하여 './emails/waste_calendar_email.txt'로 저장하세요.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/waste_collection_calendar.ics"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/waste_calendar_email.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/waste_collection_calendar.ics",
+        "keywords": [
+          "Organic",
+          "Paper",
+          "Plastic",
+          "Glass",
+          "General"
+        ]
+      }
+    }
+  ]
+}

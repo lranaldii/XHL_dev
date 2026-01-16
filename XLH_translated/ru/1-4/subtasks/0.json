@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-07-05",
+  "weekday": "Saturday",
+  "time": "03:00 PM",
+  "task": "Создавайте статьи о веб-дизайне/UI, адаптированные для каждой страны и языка, перечисленных в файлеcountries.csv. Следуйте заданному тону, длине, структуре, визуальному стилю и терминологическим соглашениям. По возможности включите местные примеры или ссылки и адаптируйте цвета и символы в соответствии с культурными нормами. Сохраните каждую статью как «./articles/web_design_article_<ID>.txt», где <ID> — это код страны.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_CN.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./articles/web_design_article_DE.txt",
+        "keywords": [
+          "Web Design",
+          "UI",
+          "H1",
+          "H2",
+          "CTA"
+        ]
+      }
+    }
+  ]
+}

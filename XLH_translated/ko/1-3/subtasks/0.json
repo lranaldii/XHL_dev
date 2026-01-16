@@ -1,0 +1,29 @@
+{
+  "username": "Alice",
+  "date": "2025-06-12",
+  "weekday": "Thursday",
+  "time": "02:00 PM",
+  "task": "동일한 주제를 설명하는 서로 다른 두 국가의 제공된 데이터세트를 비교합니다. 데이터에 반영된 문화적, 성별, 사회적, 경제적 차이를 강조하는 서면 보고서를 작성합니다. 인구통계학적 요인과 지역 사회 구조를 고려하여 상황에 맞는 방식으로 결과를 해석합니다. 관련 추세나 패턴을 식별하고 지역적 요인으로 인해 발생할 수 있는 통계적 편향이나 왜곡에 대해 논의합니다. 최종 보고서를 './report/cross_culture_analytic.txt'에 저장합니다.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/cross_cultural_analysis.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/cross_cultural_analysis.txt",
+        "keywords": [
+          "gender",
+          "culture",
+          "bias",
+          "context",
+          "difference"
+        ]
+      }
+    }
+  ]
+}

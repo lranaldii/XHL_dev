@@ -1,0 +1,41 @@
+{
+  "username": "Alice",
+  "date": "2025-12-27",
+  "weekday": "Saturday",
+  "time": "09:00 AM",
+  "task": "أنشئ خط سير رحلة نهاية الأسبوع إلى أليس في أوسلو، باستخدام وسائل النقل العام فقط. يجب أن يتضمن خط سير الرحلة وسائل النقل (الحافلة، الترام، المترو، العبارة)، أوقات المغادرة والوصول، أرقام الخطوط ومعلومات التذكرة. قم بإنشاء ملف تقويم ICS يتضمن جميع الرحلات واحفظ ملخص CSV لمسار الرحلة.",
+  "evaluation": [
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "csv",
+        "file": "./itinerary/weekend_itinerary.csv",
+        "keywords": [
+          "day",
+          "time",
+          "from",
+          "to",
+          "transport",
+          "line",
+          "duration",
+          "notes"
+        ]
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/Alice.ics",
+        "keywords": [
+          "DTSTART:20251227T101500",
+          "Oslo",
+          "Ferry",
+          "Metro",
+          "Bus",
+          "Tram"
+        ]
+      }
+    }
+  ]
+}

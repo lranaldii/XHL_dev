@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-04-10",
+  "weekday": "Thursday",
+  "time": "11:00 AM",
+  "task": "Analise o conjunto de dados de vendas fornecido e crie um relatório legível para um público local no país especificado. O relatório deve seguir as convenções do país, incluindo moeda, separadores decimais e de milhar, formato de data e idioma. Calcule a receita total por produto e a receita geral, apresente os resultados em uma tabela devidamente formatada e gere pelo menos um gráfico com legenda clara. Salve o relatório escrito em './report/sales_report.txt' e o gráfico em './report/sales_chart.png'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_report.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_chart.png"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/sales_report.txt",
+        "keywords": [
+          "€",
+          "Totale",
+          "/",
+          ","
+        ]
+      }
+    }
+  ]
+}

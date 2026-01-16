@@ -1,0 +1,46 @@
+{
+  "username": "Alice",
+  "date": "2025-05-15",
+  "weekday": "Thursday",
+  "time": "01:00 PM",
+  "task": "Используя предоставленную информацию о ресторане, меню, обзоры и предпочтения пользователя, выберите наиболее подходящий ресторан, отвечающий диетическим требованиям пользователя. Учитывайте ингредиенты меню, отзывы и политику ресторана. Напишите электронное письмо с просьбой о бронировании, в котором четко укажите диетические потребности и детали бронирования, и сохраните его как «./emails/restaurant_booking_request.txt». Также создайте запись в календаре для бронирования и сохраните ее как «./calendar/restaurant_booking.ics».",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/restaurant_booking_request.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/restaurant_booking.ics"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./emails/restaurant_booking_request.txt",
+        "keywords": [
+          "gluten",
+          "reservation",
+          "Oslo",
+          "dietary"
+        ]
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/restaurant_booking.ics",
+        "keywords": [
+          "DTSTART",
+          "Oslo",
+          "Dinner"
+        ]
+      }
+    }
+  ]
+}

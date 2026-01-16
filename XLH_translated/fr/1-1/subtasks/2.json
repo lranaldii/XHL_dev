@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "09:30 AM",
+  "task": "En utilisant l'emplacement fourni, les règles de collecte des déchets et les jours fériés locaux, créez un calendrier localisé de collecte des déchets. Le calendrier doit inclure différents types de déchets, leur fréquence de collecte et tenir compte des jours fériés locaux pendant lesquels les services peuvent être suspendus. Formatez les dates selon les conventions locales et utilisez la langue locale. Enregistrez le calendrier sous « ./calendar/waste_collection_calendar.ics ». De plus, générez un court e-mail explicatif résumant le calendrier et enregistrez-le sous « ./emails/waste_calendar_email.txt ».",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/waste_collection_calendar.ics"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/waste_calendar_email.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/waste_collection_calendar.ics",
+        "keywords": [
+          "Organic",
+          "Paper",
+          "Plastic",
+          "Glass",
+          "General"
+        ]
+      }
+    }
+  ]
+}

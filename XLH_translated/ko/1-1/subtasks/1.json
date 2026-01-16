@@ -1,0 +1,34 @@
+{
+  "username": "Alice",
+  "date": "2025-04-10",
+  "weekday": "Thursday",
+  "time": "11:00 AM",
+  "task": "제공된 판매 데이터세트를 분석하고 지정된 국가의 현지 고객을 대상으로 읽을 수 있는 보고서를 만듭니다. 보고서는 통화, 소수점 및 천 단위 구분 기호, 날짜 형식, 언어 등 해당 국가의 규칙을 따라야 합니다. 제품별 총 수익과 전체 수익을 계산하고, 결과를 적절한 형식의 테이블에 표시하고, 명확한 범례가 포함된 차트를 하나 이상 생성합니다. 작성된 보고서는 './report/sales_report.txt'에, 차트는 './report/sales_chart.png'에 저장합니다.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_report.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/sales_chart.png"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/sales_report.txt",
+        "keywords": [
+          "€",
+          "Totale",
+          "/",
+          ","
+        ]
+      }
+    }
+  ]
+}

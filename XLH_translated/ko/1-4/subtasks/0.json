@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-07-05",
+  "weekday": "Saturday",
+  "time": "03:00 PM",
+  "task": "country.csv에 나열된 각 국가 및 언어에 적합한 웹 디자인/UI 기사를 생성합니다. 지정된 어조, 길이, 구조, 시각적 스타일, 용어 규칙을 따르세요. 가능하다면 현지 사례나 참고 자료를 포함하고 문화적 규범에 따라 색상과 기호를 조정하세요. 각 기사를 './articles/web_design_article_<ID>.txt'로 저장합니다. 여기서 <ID>는 국가 코드입니다.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_CN.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./articles/web_design_article_DE.txt",
+        "keywords": [
+          "Web Design",
+          "UI",
+          "H1",
+          "H2",
+          "CTA"
+        ]
+      }
+    }
+  ]
+}

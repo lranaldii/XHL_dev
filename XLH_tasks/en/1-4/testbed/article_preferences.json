@@ -1,0 +1,9 @@
+{
+  "tone": "formal",
+  "length": "800-1000 words",
+  "structure": ["H1", "H2", "paragraphs", "bullet_points", "CTA"],
+  "visual_style": {
+    "colors": [],
+    "images": "minimal, professional"
+  }
+}

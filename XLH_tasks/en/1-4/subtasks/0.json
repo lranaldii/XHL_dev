@@ -1,0 +1,49 @@
+{
+  "username": "Alice",
+  "date": "2025-07-05",
+  "weekday": "Saturday",
+  "time": "03:00 PM",
+  "task": "Generate Web Design / UI articles adapted for ONLY the countries and languages listed in countries.csv. Follow the specified tone, length, structure, visual style, and terminology conventions. Include local examples or references when possible, and adapt colors and symbols according to cultural norms. Save each article as './articles/web_design_article_<ID>.txt', where <ID> is the country code.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_CN.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./articles/web_design_article_DE.txt",
+        "keywords": [
+          "Web Design",
+          "UI",
+          "H1",
+          "H2",
+          "CTA"
+        ]
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./articles/web_design_article_CN.txt",
+        "keywords": [
+          "Web Design",
+          "UI",
+          "H1",
+          "H2",
+          "CTA"
+        ]
+      }
+    }
+  ]
+}

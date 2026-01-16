@@ -1,0 +1,15 @@
+{
+  "username": "Alice",
+  "date": "2025-05-02",
+  "weekday": "Friday",
+  "time": "04:00 PM",
+  "task": "À l'aide de la recette fournie et des informations sur le pays, créez une liste de courses localisée pour préparer le plat dans le pays cible. Adaptez les noms des ingrédients à la langue locale, convertissez les quantités et les unités en celles couramment utilisées localement et suggérez des substituts culturellement appropriés lorsque les ingrédients originaux ne sont pas facilement disponibles. Enregistrez la liste de courses finale dans './shopping/shopping_list.txt'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./shopping/shopping_list.txt"
+      }
+    }
+  ]
+}

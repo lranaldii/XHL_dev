@@ -1,0 +1,15 @@
+{
+  "username": "Alice",
+  "date": "2025-05-02",
+  "weekday": "Friday",
+  "time": "04:00 PM",
+  "task": "제공된 레시피와 국가 정보를 사용하여 대상 국가에서 요리를 준비하기 위한 현지화된 쇼핑 목록을 만듭니다. 재료 이름을 현지 언어에 맞게 조정하고, 양과 단위를 현지에서 일반적으로 사용되는 것으로 변환하고, 원래 재료를 쉽게 구할 수 없는 경우 문화적으로 적절한 대체품을 제안합니다. 최종 쇼핑 목록을 './shopping/shopping_list.txt'에 저장하세요.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./shopping/shopping_list.txt"
+      }
+    }
+  ]
+}

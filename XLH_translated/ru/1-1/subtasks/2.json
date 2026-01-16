@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "09:30 AM",
+  "task": "Используя предоставленное местоположение, правила сбора мусора и местные праздники, создайте локализованный календарь сбора мусора. В календаре должны быть указаны различные виды отходов, частота их сбора, а также местные праздники, когда услуги могут быть приостановлены. Форматируйте даты в соответствии с местными правилами и используйте местный язык. Сохраните календарь как «./calendar/waste_collection_calendar.ics». Кроме того, создайте короткое объяснительное электронное письмо с кратким описанием расписания и сохраните его как «./emails/waste_calendar_email.txt».",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/waste_collection_calendar.ics"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/waste_calendar_email.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/waste_collection_calendar.ics",
+        "keywords": [
+          "Organic",
+          "Paper",
+          "Plastic",
+          "Glass",
+          "General"
+        ]
+      }
+    }
+  ]
+}

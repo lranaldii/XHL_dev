@@ -1,0 +1,29 @@
+{
+  "username": "Alice",
+  "date": "2025-06-12",
+  "weekday": "Thursday",
+  "time": "02:00 PM",
+  "task": "Compare the provided datasets from two different countries that describe the same topic. Produce a written report highlighting cultural, gender, social, or economic differences reflected in the data. Interpret the results in a contextualized way, taking into account demographic factors and local societal structures. Identify relevant trends or patterns and discuss any potential statistical biases or distortions caused by local factors. Save the final report in './report/cross_cultural_analysis.txt'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/cross_cultural_analysis.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/cross_cultural_analysis.txt",
+        "keywords": [
+          "gender",
+          "culture",
+          "bias",
+          "context",
+          "difference"
+        ]
+      }
+    }
+  ]
+}

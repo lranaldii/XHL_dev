@@ -1,0 +1,15 @@
+{
+  "username": "Alice",
+  "date": "2025-05-02",
+  "weekday": "Friday",
+  "time": "04:00 PM",
+  "task": "Using the provided recipe and country information, create a localized shopping list for preparing the dish in the target country. Adapt ingredient names to the local language, convert quantities and units to those commonly used locally, and suggest culturally appropriate substitutes when original ingredients are not easily available. Save the final shopping list in './shopping/shopping_list.txt'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./shopping/shopping_list.txt"
+      }
+    }
+  ]
+}

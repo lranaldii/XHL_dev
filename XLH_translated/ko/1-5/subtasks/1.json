@@ -1,0 +1,46 @@
+{
+  "username": "Alice",
+  "date": "2025-05-15",
+  "weekday": "Thursday",
+  "time": "01:00 PM",
+  "task": "제공된 레스토랑 정보, 메뉴, 리뷰, 사용자 선호도 등을 활용하여 사용자의 식단 요구사항에 가장 적합한 레스토랑을 선택합니다. 메뉴 재료, 리뷰, 레스토랑 정책을 고려하세요. 식이 요법과 예약 세부 사항을 명확하게 언급하는 예약 요청 이메일을 작성하고 './emails/restaurant_booking_request.txt'로 저장하세요. 또한 예약에 대한 캘린더 항목을 생성하고 './calendar/restaurant_booking.ics'로 저장합니다.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/restaurant_booking_request.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/restaurant_booking.ics"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./emails/restaurant_booking_request.txt",
+        "keywords": [
+          "gluten",
+          "reservation",
+          "Oslo",
+          "dietary"
+        ]
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/restaurant_booking.ics",
+        "keywords": [
+          "DTSTART",
+          "Oslo",
+          "Dinner"
+        ]
+      }
+    }
+  ]
+}

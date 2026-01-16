@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "09:30 AM",
+  "task": "Usando o local fornecido, as regras de coleta de resíduos e os feriados locais, crie um calendário de coleta de resíduos localizado. O calendário deve incluir os diferentes tipos de resíduos, a sua frequência de recolha e ter em conta os feriados locais onde os serviços podem ser suspensos. Formate as datas de acordo com as convenções locais e use o idioma local. Salve o calendário como './calendar/waste_collection_calendar.ics'. Além disso, gere um breve e-mail explicativo resumindo a programação e salve-o como './emails/waste_calendar_email.txt'.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/waste_collection_calendar.ics"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/waste_calendar_email.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/waste_collection_calendar.ics",
+        "keywords": [
+          "Organic",
+          "Paper",
+          "Plastic",
+          "Glass",
+          "General"
+        ]
+      }
+    }
+  ]
+}

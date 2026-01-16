@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-07-05",
+  "weekday": "Saturday",
+  "time": "03:00 PM",
+  "task": "生成适合 states.csv 中列出的每个国家/地区和语言的网页设计/UI 文章。遵循指定的语气、长度、结构、视觉风格和术语约定。尽可能包括当地的例子或参考，并根据文化规范调整颜色和符号。将每篇文章另存为“./articles/web_design_article_<ID>.txt”，其中 <ID> 是国家/地区代码。",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./articles/web_design_article_CN.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./articles/web_design_article_DE.txt",
+        "keywords": [
+          "Web Design",
+          "UI",
+          "H1",
+          "H2",
+          "CTA"
+        ]
+      }
+    }
+  ]
+}

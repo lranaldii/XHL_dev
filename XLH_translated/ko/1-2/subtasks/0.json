@@ -1,0 +1,45 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "10:00 AM",
+  "task": "제공된 개인 정보, 직무 설명 및 채용 담당자 목록을 사용하여 각 채용 담당자에 대한 국가별 CV를 작성하고 언어, 어조, 구조 및 형식을 각 국가의 관습에 맞게 조정합니다. 각 이력서를 './cv/' 폴더에 Word 문서로 저장하세요. 그런 다음 각 채용 담당자에게 해당 CV를 첨부하여 별도의 이메일을 보내고, 보낸 각 이메일을 './email/' 폴더에 텍스트 파일로 저장합니다.",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_DE.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_US.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./cv/Alice_CV_IT.docx"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_DE.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_US.txt"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./email/sent_email_IT.txt"
+      }
+    }
+  ]
+}

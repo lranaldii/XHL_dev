@@ -1,0 +1,29 @@
+{
+  "username": "Alice",
+  "date": "2025-06-12",
+  "weekday": "Thursday",
+  "time": "02:00 PM",
+  "task": "قارن بين مجموعات البيانات المقدمة من بلدين مختلفين يصفان نفس الموضوع. قم بإعداد تقرير مكتوب يسلط الضوء على الاختلافات الثقافية أو الجنسية أو الاجتماعية أو الاقتصادية التي تنعكس في البيانات. تفسير النتائج بطريقة سياقية، مع الأخذ في الاعتبار العوامل الديموغرافية والهياكل المجتمعية المحلية. تحديد الاتجاهات أو الأنماط ذات الصلة ومناقشة أي تحيزات أو تشوهات إحصائية محتملة ناجمة عن العوامل المحلية. احفظ التقرير النهائي في \"./report/cross_culture_analogy.txt\".",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./report/cross_cultural_analysis.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "txt",
+        "file": "./report/cross_cultural_analysis.txt",
+        "keywords": [
+          "gender",
+          "culture",
+          "bias",
+          "context",
+          "difference"
+        ]
+      }
+    }
+  ]
+}

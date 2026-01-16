@@ -1,0 +1,35 @@
+{
+  "username": "Alice",
+  "date": "2025-03-15",
+  "weekday": "Saturday",
+  "time": "09:30 AM",
+  "task": "باستخدام الموقع المقدم وقواعد جمع النفايات والعطلات المحلية، قم بإنشاء تقويم محلي لجمع النفايات. يجب أن يتضمن التقويم أنواع النفايات المختلفة، وتكرار جمعها، وحساب العطلات المحلية التي قد يتم فيها تعليق الخدمات. قم بتنسيق التواريخ وفقًا للاتفاقيات المحلية واستخدم اللغة المحلية. احفظ التقويم باسم \"./calendar/waste_collection_calendar.ics\". بالإضافة إلى ذلك، قم بإنشاء بريد إلكتروني توضيحي قصير يلخص الجدول الزمني واحفظه باسم \"./emails/waste_calendar_email.txt\".",
+  "evaluation": [
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./calendar/waste_collection_calendar.ics"
+      }
+    },
+    {
+      "function": "evaluate_file_exist",
+      "args": {
+        "file": "./emails/waste_calendar_email.txt"
+      }
+    },
+    {
+      "function": "evaluate_contain",
+      "args": {
+        "doc_type": "ics",
+        "file": "./calendar/waste_collection_calendar.ics",
+        "keywords": [
+          "Organic",
+          "Paper",
+          "Plastic",
+          "Glass",
+          "General"
+        ]
+      }
+    }
+  ]
+}
